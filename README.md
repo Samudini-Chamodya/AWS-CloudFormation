@@ -156,18 +156,18 @@ Outputs:
 - Navigate to AWS CloudFormation → Create Stack → With new resources (standard). 
 - Choose Upload a template file
 - Upload the YAML file created above.
-- ![Step1](screenshots/step1.png)  
+  ![Step1](screenshots/step1.png)  
 
 ## Step 2: Configure Stack Details
 - Enter a Stack Name (e.g., EC2-VPC-Stack).
 - Enter KeyPairName (e.g., node-key).
-- - ![Step2](screenshots/step2.png) 
+  ![Step2](screenshots/step2.png) 
 
 ## Step 3: Review and Create Stack
 - Leave other options as default. (beginner friendly)
 - Check IAM resource acknowledgment.
 - Click Create stack.
-- - ![Stack _create](screenshots/stack.png) 
+  ![Stack _create](screenshots/stack.png) 
 
 #  6. Verification
 
@@ -177,13 +177,13 @@ Outputs:
 - ![EC2](screenshots/ec2.png) 
 
 ## VPC & Subnet
-- ![VPC](screenshots/vpc.png) 
+![VPC](screenshots/vpc.png) 
 
 ## Security Group
-- ![Security-Groups](screenshots/security_groups.png) 
+![Security_Groups](screenshots/security_group.png) 
 
 ## CloudFormation Stack Outputs
-- ![Stack Output](screenshots/stack.png) 
+![Stack Output](screenshots/stack.png) 
 
 
 # 7. Testing
