@@ -10,7 +10,7 @@ The purpose of this practical is to use **AWS CloudFormation** to automate the p
 
 ---
 
-## 2. Pre-requisites
+### 2. Pre-requisites
 Before starting, ensure:
 
 - You have access to an **AWS Account**.  
@@ -151,42 +151,42 @@ Outputs:
     Description: Public IP of EC2
     Value: !GetAtt MyEC2Instance.PublicIp
 ```
-# 5. Steps to Deploy
-## Step 1: Open CloudFormation Console & Upload Template 
+## 5. Steps to Deploy
+### Step 1: Open CloudFormation Console & Upload Template 
 - Navigate to AWS CloudFormation → Create Stack → With new resources (standard). 
 - Choose Upload a template file
 - Upload the YAML file created above.
   ![Step1](screenshots/step1.png)  
 
-## Step 2: Configure Stack Details
+### Step 2: Configure Stack Details
 - Enter a Stack Name (e.g., EC2-VPC-Stack).
 - Enter KeyPairName (e.g., node-key).
   ![Step2](screenshots/step2.png) 
 
-## Step 3: Review and Create Stack
+### Step 3: Review and Create Stack
 - Leave other options as default. (beginner friendly)
 - Check IAM resource acknowledgment.
 - Click Create stack.
   ![Stack _create](screenshots/stack.png) 
 
-#  6. Verification
+##  6. Verification
 
 - Once the stack is created successfully, verify resources:
 
-## EC2 Instance
+### EC2 Instance
 - ![EC2](screenshots/ec2.png) 
 
-## VPC & Subnet
+### VPC & Subnet
 ![VPC](screenshots/vpc.png) 
 
-## Security Group
+### Security Group
 ![Security_Groups](screenshots/security_group.png) 
 
-## CloudFormation Stack Outputs
+### CloudFormation Stack Outputs
 ![Stack Output](screenshots/stack.png) 
 
 
-# 7. Testing
+## 7. Testing
 
 - Copy the Public IP of the EC2 instance.
 - SSH into instance using existing key pair:
@@ -207,7 +207,7 @@ echo "Hello from CloudFormation EC2" | sudo tee /var/www/html/index.html
 
 ``` http://<PublicIP>```
 
-# 8. Conclusion
+## 8. Conclusion
 
 - In this practical, we automated the creation of a complete AWS environment using CloudFormation. The template successfully provisioned:
 
