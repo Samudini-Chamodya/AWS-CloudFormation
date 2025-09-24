@@ -203,7 +203,7 @@ echo "Hello from CloudFormation EC2" | sudo tee /var/www/html/index.html
 ```
 
 
-# Then visit:
+- Then visit:
 
 ``` http://<PublicIP>```
 
